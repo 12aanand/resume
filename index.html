@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foods template</title>
+    <style>
+        #object{
+            margin: 30px;
+        }
+        #object img{
+            width: 100px;
+            height: 100px;
+            margin: 10px 30px;
+        }
+        #navbar{
+            display: flex;
+            
+        }
+        #navbar::before{
+            content:"";
+            background-color: black;
+            border: 5px solid black;
+            position:absolute;
+            z-index: -1;
+            opacity:0.4
+        }
+        #navbar ul{
+            display: flex;
+            text-decoration:none;
+        }
+        #navbar ul li{
+            list-style: none;
+            margin: 40px;
+            padding: 30px;
+            font-size: 30px;
+            color:bisque
+        }
+        #navbar ul li a{
+            display:block;
+            text-decoration: none;
+            color:bisque
+        }
+        #navbar ul li a:hover{
+            color: rgb(236, 49, 49);
+        }
+        #jannat{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 300px;
+        }
+        #jannat::before{
+            content:"";
+            background:url('images/apple.jpg');
+            background-size: cover;
+            background-position: center center;
+            position:absolute;
+            width:100%;
+            height:100%;
+            z-index:-1;
+            opacity: 0.89;
+        
+
+        
+        }
+
+        #jannat h1{
+            font-size:3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:blanchedalmond
+
+        }
+        #jannat p{
+            font-size:20px;
+            color:azure
+        }
+        #vinit{
+            position: relative;
+            text-align: center;
+            margin:50px;
+        }
+        #vinit h1{
+            font-size: 3rem;
+            text-align:center;
+            color: aliceblue;
+        }
+        #vinit p{
+            padding:0px 200px;
+            font-size: 20px;
+            color:bisque
+
+        }
+        .container{
+            display: flex;
+            margin: 34px;
+        }
+        .box{
+            border: 3px solid black;
+            border-radius: 5px;
+            margin: 10px 10px;
+            padding:14px;
+            background-color: rgb(221, 220, 220);
+        }
+        .box img{
+           width: 80px;
+           height: 80px;
+           margin-left: 30px;
+           margin-top: 20px;
+
+        }
+        .box h2{
+            text-align: center;
+            font-size: 30px;
+
+        }
+        .box p{
+            font-size:20px;
+        }
+        .box::before{
+            
+            content:"";
+            background:url('images/food3.jpeg');
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            z-index:-1;
+            opacity: 0.89;
+        
+        }
+        #content h1{
+            text-align: center;
+            margin-top: 80px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 40px;
+            color: bisque;
+        }
+        #content-box{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            
+        }
+        #content-box input,
+        #content-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+        #content-box form{
+            width: 40%;
+        }
+        #content-box label{
+            font-size: 20px;
+            color:rgb(55, 1, 1)
+        }
+        #content::before{
+            content:"";
+            background:url('images/food2.jpg');
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            z-index:-1;
+            opacity: 0.5;
+        
+        }
+        .menu{
+            font-size:40px;
+            margin: 60px 500px;
+            display: flex; 
+            /* border: 3px solid white; */
+
+        }
+        .menu a{
+            text-decoration: none;
+            color:white;
+            background-color: brown;
+            border: 3px solid white;
+
+        }
+        .menu div{
+            color: white;
+            margin: 0px 40px;
+            background-color: brown;
+            border: 3px solid white;
+        }
+        .menu a:hover{
+            background-color:darkgreen;
+        }
+        .btn{
+            color: white;
+    
+        }
+        .menu div:hover{
+            background-color: darkgreen;
+        }
+        
+
+
+    
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="object">
+            <img src="images/logo1.png" alt="">
+        </div>
+          <ul>
+             <li class="item"><a href="#">Home</a></li>
+             <li class="item"><a href="#">service</a></li>
+             <li class="item"><a href="#">About us</a></li>
+              <li class="item"><a href="#">contact</a></li>
+              
+          </ul>
+        </div>
+     </nav>
+     <section>
+     <div id="jannat">
+        <h1> Welcome to dhanbad fastfood </h1>
+        <p>A restaurant is a business that prepares and serves food and drinks to customers.[1] Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services.Restaurants vary greatly in appearance and offerings, including a wide variety of cuisines and service models ranging from inexpensive fast-food restaurants and cafeterias to mid-priced family restaurants, to high-priced luxury establishments.</p>
+     </div>
+    </section>
+    <section>
+        <div id="vinit">
+            <h1> user service </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate dolor impedit assumenda nemo esse dolorum maiores? Suscipit tempora, unde magnam voluptatem dolorum impedit totam quidem nobis quaerat nesciunt ullam natus?</p>
+        </div>
+    </section>
+    <section>
+         <div class="container">
+            <div class="box"> 
+                <img src="images/food2.jpg" alt="">
+                <h2 class="h-secondry center">Food catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio iste voluptate aut non quibusdam? Molestiae pariatur reprehenderit error cumque natus quaerat, asperiores rem odio neque maiores commodi nobis, fugit alias.</p>
+            </div>
+                <div class="box">
+                    <img src="images/food1.jpg" alt="">
+                <h2>Food order</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores aperiam sunt vel magnam consequatur nostrum assumenda provident commodi, pariatur, numquam reprehenderit ullam alias consequuntur sed eius omnis optio natus ipsam?</p>
+    
+            </div>
+            <div class="box">
+                <img src="images/ip.jpg" alt="">
+                <h2>Bulk order</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vel reprehenderit doloribus saepe laborum, dicta quo numquam ullam? Voluptate magni commodi praesentium ex aspernatur voluptatibus magnam itaque ullam corporis nemp</p>
+            </div>
+            </div>
+        </div>
+             
+        </div>
+    </section>
+
+    <section id="content">
+        <h1>Contact Us</h1>
+        <div id="content-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name"> <b>Name:</b></label>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name"><b>Email id</b></label>
+                    <input type="email" name="name" id="name" placeholder="enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="name"><b>Phone no</b></label>
+                    <input type="phone no" name="name" id="name" placeholder="enter your phone no">
+                </div>
+                <div class="form-group">
+                    <label for="name"><b>massage</b></label>
+                    <textarea name="massage" id="" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </section>
+     
+    <section>
+        <div class="menu">
+            <a href="#">Menu</a>
+            <div class="menu">order now</div>
+        </div>
+    </section>
+</body>
+</html>
